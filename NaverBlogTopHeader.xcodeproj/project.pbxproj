@@ -9,21 +9,27 @@
 /* Begin PBXBuildFile section */
 		DBDEAE7925481F4600E41245 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBDEAE7825481F4600E41245 /* AppDelegate.swift */; };
 		DBDEAE7B25481F4600E41245 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBDEAE7A25481F4600E41245 /* SceneDelegate.swift */; };
-		DBDEAE7D25481F4600E41245 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBDEAE7C25481F4600E41245 /* ViewController.swift */; };
+		DBDEAE7D25481F4600E41245 /* NaverBlogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBDEAE7C25481F4600E41245 /* NaverBlogViewController.swift */; };
 		DBDEAE8025481F4600E41245 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBDEAE7E25481F4600E41245 /* Main.storyboard */; };
 		DBDEAE8225481F4700E41245 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBDEAE8125481F4700E41245 /* Assets.xcassets */; };
 		DBDEAE8525481F4700E41245 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBDEAE8325481F4700E41245 /* LaunchScreen.storyboard */; };
+		DBDEAE8F2548204E00E41245 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBDEAE8E2548204E00E41245 /* HeaderView.swift */; };
+		DBDEAE932548205F00E41245 /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBDEAE922548205F00E41245 /* Cell.swift */; };
+		DBDEAE962548208A00E41245 /* SectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBDEAE952548208A00E41245 /* SectionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		DBDEAE7525481F4600E41245 /* NaverBlogTopHeader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NaverBlogTopHeader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBDEAE7825481F4600E41245 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DBDEAE7A25481F4600E41245 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DBDEAE7C25481F4600E41245 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DBDEAE7C25481F4600E41245 /* NaverBlogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaverBlogViewController.swift; sourceTree = "<group>"; };
 		DBDEAE7F25481F4600E41245 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DBDEAE8125481F4700E41245 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DBDEAE8425481F4700E41245 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DBDEAE8625481F4700E41245 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DBDEAE8E2548204E00E41245 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		DBDEAE922548205F00E41245 /* Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
+		DBDEAE952548208A00E41245 /* SectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,34 @@
 		DBDEAE7725481F4600E41245 /* NaverBlogTopHeader */ = {
 			isa = PBXGroup;
 			children = (
+				DBDEAE982548209B00E41245 /* ViewController */,
+				DBDEAE8D2548204400E41245 /* View */,
 				DBDEAE7825481F4600E41245 /* AppDelegate.swift */,
 				DBDEAE7A25481F4600E41245 /* SceneDelegate.swift */,
-				DBDEAE7C25481F4600E41245 /* ViewController.swift */,
 				DBDEAE7E25481F4600E41245 /* Main.storyboard */,
 				DBDEAE8125481F4700E41245 /* Assets.xcassets */,
 				DBDEAE8325481F4700E41245 /* LaunchScreen.storyboard */,
 				DBDEAE8625481F4700E41245 /* Info.plist */,
 			);
 			path = NaverBlogTopHeader;
+			sourceTree = "<group>";
+		};
+		DBDEAE8D2548204400E41245 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DBDEAE8E2548204E00E41245 /* HeaderView.swift */,
+				DBDEAE922548205F00E41245 /* Cell.swift */,
+				DBDEAE952548208A00E41245 /* SectionView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DBDEAE982548209B00E41245 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				DBDEAE7C25481F4600E41245 /* NaverBlogViewController.swift */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,9 +162,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DBDEAE7D25481F4600E41245 /* ViewController.swift in Sources */,
+				DBDEAE7D25481F4600E41245 /* NaverBlogViewController.swift in Sources */,
 				DBDEAE7925481F4600E41245 /* AppDelegate.swift in Sources */,
+				DBDEAE962548208A00E41245 /* SectionView.swift in Sources */,
+				DBDEAE932548205F00E41245 /* Cell.swift in Sources */,
 				DBDEAE7B25481F4600E41245 /* SceneDelegate.swift in Sources */,
+				DBDEAE8F2548204E00E41245 /* HeaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
